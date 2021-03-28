@@ -3,8 +3,11 @@ import java.util.Scanner;
 public class Ejercicio1 {
 
 	public static int sumaDig(int num) {
+	
+	   if (num<=9)
+	    	return num;
 		
-	   return (num%10)+sumaDig(num/10);
+	   else return (num%10)+sumaDig(num/10);
 }
 	
 	
